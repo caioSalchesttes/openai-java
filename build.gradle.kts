@@ -1,5 +1,6 @@
 plugins {
     id("org.jetbrains.dokka") version "2.0.0"
+    `maven-publish`
 }
 
 repositories {
@@ -22,6 +23,14 @@ subprojects {
         description = "Verifies all source files are formatted."
     }
     apply(plugin = "org.jetbrains.dokka")
+    apply(plugin = "maven-publish")
+
+    // Desabilitar assinatura completamente
+    plugins.withId("signing") {
+        extensions.configure<SigningExtension> {
+            isRequired = false
+        }
+    }
 }
 
 subprojects {
