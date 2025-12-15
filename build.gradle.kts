@@ -7,7 +7,7 @@ repositories {
 }
 
 allprojects {
-    group = "io.github.caiosalchesttes"
+    group = "io.github.caioSalchesttes"
     version = "0.1.0"
 }
 
