@@ -7,8 +7,8 @@ repositories {
 }
 
 allprojects {
-    group = "io.github.caioSalchesttes"
-    version = "0.1.0"
+    group = "com.openai"
+    version = "4.11.0" // x-release-please-version
 }
 
 subprojects {
